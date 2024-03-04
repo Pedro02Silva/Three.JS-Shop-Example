@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>La Redoute | Grandes descontos em Moda &amp; Casa</title>
+      <link rel="stylesheet" href="CSS/style.css">
+      <link rel="stylesheet" href="CSS/products.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   </head>
+   <body>
+      <header id="navbarHeader"></header>
+      
+      
+      <main>
+         <div class="container-fluid mt-5">
+            <div class="row ms-2">
+               <h4 class="d-none d-xl-block">Baixámos os preços</h4>
+               <div class="col-3 d-none d-xl-block">
+                  <img src="Images/appImage.PNG" alt="APP" class="mt-4">
+                  <a href="#"><h2 class="mt-4"><i class="bi bi-arrow-left"> Outras Categorias</i></h2></a>
+                  <h3 class="mt-4">Outros Produtos</h3>
+                  <ul class="mt-2 listOtherProducts" >
+                     <li>
+                        <a href="#">Secretárias</a>
+                     </li>
+                     <li>
+                        <a href="#">Cadeiras</a>
+                     </li>
+                     <li>
+                        <a href="#">Tapetes</a>
+                     </li>
+                     <li>
+                        <a href="#">Mesas de Cabeceira </a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-12 col-xl-9">
+                  <img class="img-fluid mb-1" src="https://cdn.laredoute.com/marketing/Studio/PT/AH23/PT_PLP/images/PLP_Baixa-preco-setembro_v2.jpg" alt="">
+                  <div class="row d-flex justify-content-center my-5" id="products-list"></div>
+               </div>
+            </div>
+         </div>
+      </main>      
+
+      <footer id="footer" class="footer position-bottom"></footer>
+
+      <script>
+         $(document).ready(function() {
+           $("#navbarHeader").load("./utils/header.html");
+         });
+       </script>
+
+      <script>
+         $(document).ready(function () {
+         $("#footer").load("./utils/footer.html");
+         });
+ </script>
+      <script async src="../../node_modules/unpkg.com_es-module-shims@1.8.0_dist_es-module-shims.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
+      <script src="./JS/products.js"></script>
+   </body>
+</html>
